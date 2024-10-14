@@ -104,12 +104,12 @@ body {
 .img {
   z-index: 1;
   background-image: url(images/backgroundimg.jpg);
-  height: 1000px;
-  width: 1300px;
+  height: 600px;
+  
   background-repeat: no-repeat;
   position: relative;
   top: 100px;
-  /* left: 20px; */
+  left: 20px;
 border-radius: 50px 50px 50px 50px;
 }
 .img2{

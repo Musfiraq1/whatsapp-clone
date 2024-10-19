@@ -3,8 +3,9 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  
   background-color: #FCF6EE;
+  
 
 }
 
@@ -16,6 +17,7 @@ body {
   display: flex;
   justify-content: space-around;
   padding-top: 13px;
+  z-index: 1;
 }
 
 .navimg {
@@ -25,16 +27,16 @@ body {
 }
 
 .button {
-  margin-bottom: 10px;
+  position: relative;
   background-color: black;
-  color: black;
+  color: rgb(8, 8, 8);
   font-size: 16px;
   border: 1px solid black;
   border-radius: 25px;
-  position: relative;
   overflow: hidden;
   background: #25D366;
   transition: background-color 1.2s ease-out;
+  z-index: 1;
 }
 
 .button-size {
@@ -53,11 +55,11 @@ body {
   left: 50%;
   width: 300%;
   height: 300%;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   border-radius: 50%;
   transform: translate(-50%, 50%) scale(0);
   transition: transform 1.2s ease-out;
-  z-index: 0;
+  z-index: -1;
 }
 
 .button:hover::before {
@@ -69,12 +71,6 @@ body {
   transition: color 1.2s ease-out 0.5s;
 }
 
-.button span {
-  position: relative;
-  z-index: 1;
-  transition: color 1.2s ease-out;
-}
-
 .navlink1 {
   gap: 50px;
   display: flex;
@@ -82,7 +78,6 @@ body {
 }
 
 .link {
-  position: relative;
   text-decoration: none;
   color: black;
   font-size: 16px;
@@ -350,4 +345,120 @@ body {
 }
 .img4position{
   margin-top: 170px;
+
+}
+.footer{
+  background-color: #111B21;
+}
+.div5{
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+.button3{
+  margin-top: 100px;
+  margin-left: 60px;
+  
+}
+.whatdowedo{
+  color: white;
+  margin-top: 100px;
+  font-family: Helvetica Neue, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.linksa{
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: 20px;
+ font-family: Helvetica Neue, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+.linksa:hover{
+  text-decoration: underline;
+}
+.img5position{
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.hr{
+  border: 1px solid #33463f;
+  color: #33463f;
+  width: 80%;
+  margin-top: 50px;
+}
+.div6{
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.linksa2{
+  color: white;
+  text-decoration: none;
+  margin-top: 50px;
+}
+.plast{
+  margin-top: 50px;
+}
+.button3 {
+  position: relative;
+  background-color: black;
+  color: rgb(8, 8, 8);
+  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 25px;
+  overflow: hidden;
+  background: #1C1E21;
+  transition: background-color 1.2s ease-out;
+  z-index: 1;
+ 
+}
+
+.button-size3 {
+  width: 50px;
+  height: 50px;
+}
+
+
+.button3::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background-color: #25D366;
+  border-radius: 50%;
+  transform: translate(-50%, 50%) scale(0);
+  transition: transform 1.2s ease-out;
+  z-index: -1;
+}
+
+.button3:hover::before {
+
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.button3:hover {
+  color: white;
+  transition: color 1.2s ease-out 0.5s;
+}
+
+.circle{
+ margin-top: 50px;
+ margin-left: 20px;
+ border-color: white;
+ color: white;
+}
+.select{
+  background-color: #111B21;
+  color: white;
+  width: 250px;
+  height: 70px;
+  border-radius: 70px;
+  margin-top: 50px;
+  margin-left: 100px;
+  border:3px solid white;
+  font-weight: bold;
 }
